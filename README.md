@@ -2,38 +2,39 @@ Unity Version: 2021.3.1f1
 
 # **Takım İsmi**
 
-Takım X
+Takım 46
 
 # Ürün İle İlgili Bilgiler
 
 ## Takım Elemanları
 
-- John Doe: Product Owner
-- Jane Doe: Scrum Master
-- Atıl Samancıoğlu: Team Member/Developer
+- Selim Akar: Product Owner
+- Aslı İlik: Scrum Master
+
+Development Team:
+
+- Mert Bozkurtlar: Programmer 
+- Elif Sena Yılmaz: Developer
+- Mehmet Enes Balcı: Designer
 
 ## Ürün İsmi
 
---Movie App--
+--Düşünülme Aşamasında--
 
 ## Ürün Açıklaması
 
-- Movie App uygulamamız ile insanların izlemek istediği filmlere ve dizilere daha kolay karar vermesini sağlayacağız. İçerisinde binlerce filmi barındıran uygulamamız aynı zamanda Netflix, Prime vb. platformlarda yayınlanıp yayınlanmadığını ve IMDB puanlarını da gösterecek.
+- Çocuk kitabı temasıyla ortaya çıkmış oyunumuzda amaç, ana karakterin yolculuğunu tamamlamak ve iyi bir hikaye anlatıcılığı eşliğinde heyecanlı bir macera deneyimlemek.
 
 ## Ürün Özellikleri
 
-- Filmleri türüne göre ayırma
-- Filmlerin yönetmen, aktör, aktris vb. bilgilerini posteriyle birlikte gösterme
-- IMDB ve Rotten Tomatoes puanlarını gösterme
-- Netflix'te ve Prime'da bulunurluğunu gösterme
+- Genre: Rogue Like, Turn based Action, TCG.
+- 2D/3D özelliiklerin bir arada kullanımı.
+- Hedef Platform: PC.
+- Çocuk hikayesi teması.
 
 ## Hedef Kitle
 
-- Netflix kullanıcıları
-- Prime kullanıcıları
-- Sinema severler
-- Dizi severler
-- 15 - 65 yaş arası kullanıcılar
+- PC Oyunu oynayan herkes.
 
 ## Product Backlog URL
 
