@@ -38,7 +38,8 @@ Development Team:
 
 ## Product Backlog URL
 
-[Miro Backlog Board](https://miro.com/app/board/uXjVOSSCpsI=/)
+Game Development (https://app.asana.com/0/1202171789997354/1202171789997354)
+Art (https://app.asana.com/0/1202171789997394/1202171789997394)
 
 ---
 
