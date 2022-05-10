@@ -52,7 +52,7 @@ Art (https://app.asana.com/0/1202171789997394/1202171789997394)
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 280 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 70 ile başlaması gerektiğine karar verildi. Her bir taskimiz 20 puan, 2 task ve 2 subtask tamamlayarak 60 puan gibi bir sonuca ulaştık.
 
 - **Backlog düzeni ve Story seçimleri**: Asana üzerinden Product Backlog oluşturuldu ve taskler belirlenip ekip üyelerine atandı. 
 
@@ -63,6 +63,8 @@ Art (https://app.asana.com/0/1202171789997394/1202171789997394)
 - **Sprint board update**: Sprint board screenshotları: 
 https://docs.google.com/document/d/1dPxIBGZcsgFt6Sn6uF2Vp52uB5pVtByT/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
 
+-**Ürün Durumu**
+https://docs.google.com/document/d/12cHNqgSHlCQnljcxDt0hsWZ9GxqI6Ha4/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
 
 - **Sprint Review**: 
 Oyunda kullanılacak Card System büyük ölçüde tamamlandı, Sound System çalışmalarında ilerleme gösterildi. New input system ve cinemachine import edildi. Scene Management için planlama yapıldı. 
