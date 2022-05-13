@@ -431,68 +431,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &897461417
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2038353488}
-    m_Modifications:
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 605746532783284076, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-      propertyPath: m_Name
-      value: Card
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
---- !u!4 &897461418 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
-  m_PrefabInstance: {fileID: 897461417}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &911900596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 605746532783284075, guid: b4ce8900e26d63a4eaca6a0708e3ac27, type: 3}
@@ -1725,6 +1663,7 @@ GameObject:
   - component: {fileID: 2038353491}
   - component: {fileID: 2038353490}
   - component: {fileID: 2038353489}
+  - component: {fileID: 2038353492}
   m_Layer: 5
   m_Name: 'DeckPanel                 '
   m_TagString: Untagged
@@ -1743,8 +1682,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 897461418}
+  m_Children: []
   m_Father: {fileID: 1488824681}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1817,6 +1755,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038353487}
   m_CullTransparentMesh: 1
+--- !u!114 &2038353492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038353487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1001 &605746532945404127
 PrefabInstance:
   m_ObjectHideFlags: 0
