@@ -15,12 +15,15 @@ public class DisplayCard : MonoBehaviour
     public int attack;
     public int defense;
     public string cardDescription;
+    public Sprite spriteImage;
+
 
     public Text nameText;
     public Text manaText;
     public Text attackText;
     public Text defenseText;
     public Text descriptionText;
+    public Image artImage;
 
 
 
@@ -28,23 +31,29 @@ public class DisplayCard : MonoBehaviour
     void Start()
     {
         displayCard[0] = CardDatabase.cardList[displayId];
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
         id = displayCard[0].id;
         cardName = displayCard[0].cardName;
         mana = displayCard[0].mana;
         attack = displayCard[0].attack;
         defense = displayCard[0].defense;
         cardDescription = displayCard[0].cardDescription;
+        spriteImage = displayCard[0].spriteImage;
+
 
         nameText.text = " " + cardName;
         manaText.text = " " + mana;
         attackText.text = " " + attack;
         defenseText.text = " " + defense;
         descriptionText.text = " " + cardDescription;
+        artImage.sprite = spriteImage;
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
         
 
     }
