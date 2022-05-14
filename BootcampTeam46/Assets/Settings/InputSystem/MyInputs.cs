@@ -162,6 +162,24 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
                     ""processors"": ""NormalizeVector2"",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MousePosition"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""123dcd9d-cc46-45ef-b024-c5307dbb6150"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MouseAction"",
+                    ""type"": ""Button"",
+                    ""id"": ""1f974ba8-db48-4f9c-aa97-aa6c478c1c5c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -201,7 +219,7 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""823b44eb-3f20-44b2-b56c-ae1900789ce3"",
-                    ""path"": ""<Keyboard>/l"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -212,13 +230,35 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""62d79f38-c9e9-4351-9780-0061a69091a9"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""57b2aa71-5cee-4258-a9ee-c285ff5efbb9"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""70185408-bdc2-4371-aa56-a23bbe228975"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseAction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -231,6 +271,8 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
         // Combat
         m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
         m_Combat_Movement = m_Combat.FindAction("Movement", throwIfNotFound: true);
+        m_Combat_MousePosition = m_Combat.FindAction("MousePosition", throwIfNotFound: true);
+        m_Combat_MouseAction = m_Combat.FindAction("MouseAction", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -324,11 +366,15 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Combat;
     private ICombatActions m_CombatActionsCallbackInterface;
     private readonly InputAction m_Combat_Movement;
+    private readonly InputAction m_Combat_MousePosition;
+    private readonly InputAction m_Combat_MouseAction;
     public struct CombatActions
     {
         private @MyInputs m_Wrapper;
         public CombatActions(@MyInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Combat_Movement;
+        public InputAction @MousePosition => m_Wrapper.m_Combat_MousePosition;
+        public InputAction @MouseAction => m_Wrapper.m_Combat_MouseAction;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -341,6 +387,12 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
                 @Movement.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnMovement;
+                @MousePosition.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnMousePosition;
+                @MousePosition.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnMousePosition;
+                @MousePosition.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnMousePosition;
+                @MouseAction.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnMouseAction;
+                @MouseAction.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnMouseAction;
+                @MouseAction.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnMouseAction;
             }
             m_Wrapper.m_CombatActionsCallbackInterface = instance;
             if (instance != null)
@@ -348,6 +400,12 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @MousePosition.started += instance.OnMousePosition;
+                @MousePosition.performed += instance.OnMousePosition;
+                @MousePosition.canceled += instance.OnMousePosition;
+                @MouseAction.started += instance.OnMouseAction;
+                @MouseAction.performed += instance.OnMouseAction;
+                @MouseAction.canceled += instance.OnMouseAction;
             }
         }
     }
@@ -359,5 +417,7 @@ public partial class @MyInputs : IInputActionCollection2, IDisposable
     public interface ICombatActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnMousePosition(InputAction.CallbackContext context);
+        void OnMouseAction(InputAction.CallbackContext context);
     }
 }

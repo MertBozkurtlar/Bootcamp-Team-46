@@ -140,6 +140,24 @@
                     "processors": "NormalizeVector2",
                     "interactions": "Press",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "PassThrough",
+                    "id": "123dcd9d-cc46-45ef-b024-c5307dbb6150",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MouseAction",
+                    "type": "Button",
+                    "id": "1f974ba8-db48-4f9c-aa97-aa6c478c1c5c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -179,7 +197,7 @@
                 {
                     "name": "left",
                     "id": "823b44eb-3f20-44b2-b56c-ae1900789ce3",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -190,13 +208,35 @@
                 {
                     "name": "right",
                     "id": "62d79f38-c9e9-4351-9780-0061a69091a9",
-                    "path": "<Keyboard>/r",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "57b2aa71-5cee-4258-a9ee-c285ff5efbb9",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70185408-bdc2-4371-aa56-a23bbe228975",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
