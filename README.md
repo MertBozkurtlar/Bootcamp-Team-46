@@ -8,12 +8,13 @@ Takım 46
 
 ## Takım Elemanları
 
-- Selim Akar: Product Owner
+- Mert Bozkurtlar: Product Owner
 - Aslı İlik: Scrum Master
 
 Development Team:
 
-- Mert Bozkurtlar: Programmer 
+- Mert Bozkurtlar: Programmer
+- Selim Akar: Developer 
 - Elif Sena Yılmaz: Developer
 - Mehmet Enes Balcı: Designer
 
@@ -23,7 +24,8 @@ Development Team:
 
 ## Ürün Açıklaması
 
-- Çocuk kitabı temasıyla ortaya çıkmış oyunumuzda amaç, ana karakterin yolculuğunu tamamlamak ve iyi bir hikaye anlatıcılığı eşliğinde heyecanlı bir macera deneyimlemek.
+- Çocuk kitabı temasıyla ortaya çıkmış oyunumuzda amaç, ana karakterin yolculuğunu tamamlamak ve heyecanlı bir macera deneyimlemek. 
+- https://docs.google.com/document/d/1I7fPEMIsnDZdt4IuZGpUDDwvFg5_hBdL/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true 
 
 ## Ürün Özellikleri
 
@@ -46,37 +48,31 @@ Art (https://app.asana.com/0/1202171789997394/1202171789997394)
 
 # Sprint 1
 
-- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+- **Sprint Notları**: Ekip tanıştı ve oluşturulacak oyun üzerine tartışıldı. Üzerine çalışılacak oyun fikri belirlendikten sonra yapılması gereken görevler belirlendi ve teslim tarihleri konuldu. 
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 280 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 70 ile başlaması gerektiğine karar verildi. Her bir taskimiz 20 puan, 2 task ve 2 subtask tamamlayarak 60 puan gibi bir sonuca ulaştık.
 
-- **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
+- **Backlog düzeni ve Story seçimleri**: Asana üzerinden Product Backlog oluşturuldu ve taskler belirlenip ekip üyelerine atandı. 
 
-Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
+- **Daily Scrum**: Daily Scrum toplantıları Whatsapp ve Discord üzerinden yapıldı.
+- https://docs.google.com/document/d/1ViP7bF5EzjpDFE0jjbUagbHCfK08KXOg/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog1.png) 
-![Backlog 2](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog2.png) 
-![Backlog 3](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog3.png)
+https://docs.google.com/document/d/1dPxIBGZcsgFt6Sn6uF2Vp52uB5pVtByT/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
 
-- **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
-  ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss2.png?raw=true)
+-**Ürün Durumu**
+https://docs.google.com/document/d/12cHNqgSHlCQnljcxDt0hsWZ9GxqI6Ha4/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
 
 - **Sprint Review**: 
-Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
+Oyunda kullanılacak Card System büyük ölçüde tamamlandı, Sound System çalışmalarında ilerleme gösterildi. New input system ve cinemachine import edildi. Scene Management için planlama yapıldı. 
 
 - **Sprint Retrospective:**
-  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
-  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
-  - Unit test'ler için ayrılan efor/saat arttırılmalı 
-
--**Diğer Notlar**:
-- N/A
+  - Takım içi iletişim güçlendirilmesi için proje yöneticisinin birebirde daha aktif iletişimde olup takım ve yoğun üyeler arasında köprü görevi görmesi kararlaştırıldı.
+  - Teslim tarihlerinde daha sıkı bir tutum sergilenmesi gerektiği belirlendi.
+  - Bootcamp sürecine yetişebilmek için oyun fikrinin orijinalliğini bozmadan yapılacak işlerin minimize edilmesi gerekli.
 
 ---
 
