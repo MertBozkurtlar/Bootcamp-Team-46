@@ -41,6 +41,7 @@ public class CombatMovement : MonoBehaviour
     private void MouseClick()
     {
         Vector3Int gridPosition = groundTilemap.WorldToCell((Vector3) mousePosition);
+        Debug.Log(groundTilemap.GetColor(gridPosition));
         if(CanMove(gridPosition))
         {
             transform.position = (Vector3)gridPosition + new Vector3(0.5f, 0, 0);
@@ -59,6 +60,7 @@ public class CombatMovement : MonoBehaviour
 
     private bool CanMove(Vector3Int gridPosition)
     {
+        
         if (!groundTilemap.HasTile(gridPosition) || collisionTilemap.HasTile(gridPosition))
             return false;
         return true;
