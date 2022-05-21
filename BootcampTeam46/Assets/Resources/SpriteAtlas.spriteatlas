@@ -45,11 +45,16 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 2586e8740bac66c4994e8b9e8c9edf98, type: 3}
+    - {fileID: 2800000, guid: 80b30e44b89a78a418fb2fd5b10e59ff, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: -983079902, guid: 80b30e44b89a78a418fb2fd5b10e59ff, type: 3}
+  - {fileID: -1397076991, guid: 80b30e44b89a78a418fb2fd5b10e59ff, type: 3}
+  - {fileID: 1539720233, guid: 80b30e44b89a78a418fb2fd5b10e59ff, type: 3}
+  - {fileID: -1386092621, guid: 80b30e44b89a78a418fb2fd5b10e59ff, type: 3}
   - {fileID: 60175952, guid: 2586e8740bac66c4994e8b9e8c9edf98, type: 3}
   - {fileID: 1046760341, guid: 2586e8740bac66c4994e8b9e8c9edf98, type: 3}
   - {fileID: 846333980, guid: 2586e8740bac66c4994e8b9e8c9edf98, type: 3}
@@ -313,6 +318,10 @@ SpriteAtlas:
   - {fileID: 1062810899, guid: 2586e8740bac66c4994e8b9e8c9edf98, type: 3}
   - {fileID: -1760539617, guid: 2586e8740bac66c4994e8b9e8c9edf98, type: 3}
   m_PackedSpriteNamesToIndex:
+  - pointers_0
+  - pointers_1
+  - pointers_2
+  - pointers_3
   - snow-expansion_123
   - snow-expansion_133
   - snow-expansion_143
