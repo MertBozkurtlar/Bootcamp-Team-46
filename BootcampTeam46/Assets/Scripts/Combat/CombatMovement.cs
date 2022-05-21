@@ -20,6 +20,8 @@ public class CombatMovement : MonoBehaviour
     [SerializeField] private TileBase negativeTile;
     [SerializeField] private TileBase selectionTile;
 
+    [SerializeField] private GameObject character;
+
     private Vector2 mousePosition;
     Vector3Int lastGridPosition = Vector3Int.zero;
     private TileBase lastTile;
@@ -68,7 +70,7 @@ public class CombatMovement : MonoBehaviour
         int gridDeltaVertical = gridPosition.y - playerPosition.y;
 
         int totalDifference = Mathf.Abs(gridDeltaHorizontal) + Mathf.Abs(gridDeltaVertical);
-        Debug.Log(totalDifference);
+
         if (totalDifference < moveLength)
         {
             isInLimits = true;
@@ -81,9 +83,8 @@ public class CombatMovement : MonoBehaviour
     private void MousePosition(Vector2 position)
     {
         mousePosition = Camera.main.ScreenToWorldPoint(position);
-
-        mousePosition = Camera.main.ScreenToWorldPoint(position);
         Vector3Int gridPosition = pointerTilemap.WorldToCell((Vector3) mousePosition);
+        
         if (gridPosition != lastGridPosition)
         {
             pointerTilemap.SetTile(lastGridPosition, lastTile);
@@ -102,7 +103,7 @@ public class CombatMovement : MonoBehaviour
             ColorArea(moveLength, playerPosition, true);
             playerPosition = gridPosition;
             ColorArea(moveLength, playerPosition, false);
-            transform.position = (Vector3)gridPosition + new Vector3(0.5f, 0, 0);
+            character.transform.position = (Vector3)gridPosition + new Vector3(0.5f, 0, 0);
         }
 
     }
@@ -119,19 +120,12 @@ public class CombatMovement : MonoBehaviour
                 if (clearArea)
                 {
                     pointerTilemap.SetTile(position + new Vector3Int(x, y, 0), null);
-                    // pointerTilemap.SetTile(position + new Vector3Int(x, -y, 0), null);
-                    // pointerTilemap.SetTile(position + new Vector3Int(-x, y, 0), null);
-                    // pointerTilemap.SetTile(position + new Vector3Int(-x, -y, 0), null);
                 }
                 else
                 {
                     colorPosition = position + new Vector3Int(x, y, 0);
                     tile = CanMove(colorPosition) ? positiveTile : negativeTile;
                     pointerTilemap.SetTile(colorPosition, tile);
-
-                    // pointerTilemap.SetTile(position + new Vector3Int(x, -y, 0), positiveTile);
-                    // pointerTilemap.SetTile(position + new Vector3Int(-x, y, 0), positiveTile);
-                    // pointerTilemap.SetTile(position + new Vector3Int(-x, -y, 0), positiveTile);
                 }
             }
         }
@@ -139,10 +133,10 @@ public class CombatMovement : MonoBehaviour
 
     private void Move(Vector2 direction)
     {
-        Vector3Int gridPosition = groundTilemap.WorldToCell(transform.position + (Vector3) direction);
+        Vector3Int gridPosition = groundTilemap.WorldToCell(character.transform.position + (Vector3) direction);
         if(CanMove(gridPosition))
         {
-            transform.position += (Vector3)direction;
+            character.transform.position += (Vector3)direction;
         }
     }
 

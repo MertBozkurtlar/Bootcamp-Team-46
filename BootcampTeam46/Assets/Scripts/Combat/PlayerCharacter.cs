@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombatManager : MonoBehaviour
+public class PlayerCharacter : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,9 @@ public class CombatManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnMouseDown() {
+        Debug.Log("Player Clicked");
     }
 }
