@@ -67,16 +67,43 @@ https://docs.google.com/document/d/1dPxIBGZcsgFt6Sn6uF2Vp52uB5pVtByT/edit?usp=sh
 https://docs.google.com/document/d/12cHNqgSHlCQnljcxDt0hsWZ9GxqI6Ha4/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
 
 - **Sprint Review**: 
-Oyunda kullanılacak Card System büyük ölçüde tamamlandı, Sound System çalışmalarında ilerleme gösterildi. New input system ve cinemachine import edildi. Scene Management için planlama yapıldı. 
+Oyunda kullanılacak Card System büyük ölçüde tamamlandı, Sound System çalışmalarında ilerleme gösterildi. New input system ve cinemachine import edildi. Scene Management için planlama yapıldı.  
 
 - **Sprint Retrospective:**
-  - Takım içi iletişim güçlendirilmesi için proje yöneticisinin birebirde daha aktif iletişimde olup takım ve yoğun üyeler arasında köprü görevi görmesi kararlaştırıldı.
-  - Teslim tarihlerinde daha sıkı bir tutum sergilenmesi gerektiği belirlendi.
-  - Bootcamp sürecine yetişebilmek için oyun fikrinin orijinalliğini bozmadan yapılacak işlerin minimize edilmesi gerekli.
+- Takım içi iletişim güçlendirilmesi için proje yöneticisinin birebirde daha aktif iletişimde olup takım ve yoğun üyeler arasında köprü görevi görmesi kararlaştırıldı. 
+- Teslim tarihlerinde daha sıkı bir tutum sergilenmesi gerektiği belirlendi.
+- Bootcamp sürecine yetişebilmek için oyun fikrinin orijinalliğini bozmadan yapılacak işlerin minimize edilmesi gerekli.
 
 ---
 
 # Sprint 2
+
+- **Sprint Notları**: Punchlist oluşturuldu. Hedefler önceliklendirildi:
+- Haritada Gezebilmek
+- Combat Scene'i Yaratabilmek
+- Kart Sisteminin Çalışması 
+
+Listedeki maddeler tamamlandığında MVP düzeyinde istenilen kalitede bir oyun ortaya koyulabileceğine karar verildi. Vakit kalması halinde oyunun üstüne farklı özellikler eklenebilir.
+
+**Sprint içinde tamamlanması tahmin edilen puan**: 200 Puan
+
+**Puan tamamlama mantığı**: Listedeki her bir madde 100 puan ve ana hedef 300 puanı tamamlayabilmek.
+
+**Daily Scrum**:  Daily Scrum toplantıları Whatsapp ve Discord üzerinden devam etti.
+https://docs.google.com/document/d/1gt4ljtUlSoC--wlLJWeAwVFp7BeM3EB1/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
+
+- **Sprint board update**: https://docs.google.com/document/d/1nRXhFnbcAnMv_ekQh0gK-IN4QCQJs5xC/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
+
+-**Ürün Durumu**: https://docs.google.com/document/d/12cHNqgSHlCQnljcxDt0hsWZ9GxqI6Ha4/edit?usp=sharing&ouid=107013402656302444911&rtpof=true&sd=true
+
+https://drive.google.com/file/d/1U4SX13jlcggJF3flkTBNPfHaaHOzLnvI/view?usp=sharing
+
+- **Sprint Review**: Combat System, Sahne Geçişi ve Skor Control üzerinde ilerleme kaydedildi. Kart sistemi geliştirilme aşamasında. 
+
+- **Sprint Retrospective:**
+- Önceliğimiz mezuniyet tarihine kadar oynanır durumda bir ürün ortaya koyabilmek.
+- Bir sonraki sprint sonuna kadar punchlistte belirlenen görevler üzerinde yoğunlaşılacak.
+
 
 
 ---
