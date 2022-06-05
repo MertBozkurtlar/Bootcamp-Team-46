@@ -299,7 +299,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -658,6 +658,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5291891236309045605, guid: 2376a83a399a89e4dbf49671b98eca1a, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291891236309045627, guid: 2376a83a399a89e4dbf49671b98eca1a, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291891236309045627, guid: 2376a83a399a89e4dbf49671b98eca1a, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5291891236309045631, guid: 2376a83a399a89e4dbf49671b98eca1a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -703,14 +715,14 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 5
+    OrthographicSize: 1
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9431217, y: 1}
+    m_SensorSize: {x: 2.502559, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

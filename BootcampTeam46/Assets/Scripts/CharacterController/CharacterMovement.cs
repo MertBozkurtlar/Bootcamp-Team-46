@@ -9,12 +9,16 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float collisionOffset = 0.02f;
     public ContactFilter2D movementFilter;
     private Rigidbody2D _rigidbody2D;
+    private Animator _animator;
+    private SpriteRenderer _renderer;
     private Vector2 movementInput;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _renderer = GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate()
@@ -30,8 +34,20 @@ public class CharacterMovement : MonoBehaviour
                 if (!success)
                     success = TryToMove(new Vector2(0, movementInput.y));
             }
-                
+            _animator.SetBool("isMoving", true);
        }
+       else
+            _animator.SetBool("isMoving", false);
+
+        if (movementInput.x < 0)
+        {
+            _renderer.flipX = true;
+        }
+        else if(movementInput.x > 0)
+        {
+            _renderer.flipX = false;
+        }
+           
     }
 
     private bool TryToMove(Vector2 direction)
